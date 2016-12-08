@@ -195,8 +195,8 @@ class GAN(object):
                     self.z: np.reshape(z, (self.batch_size, 1))
                 })
 
-                if step % self.log_every == 0:
-                    print('{}: {}\t{}'.format(step, loss_d, loss_g))
+                #if step % self.log_every == 0:
+                    #print('{}: {}\t{}'.format(step, loss_d, loss_g))
 
                 if self.anim_path:
                     self.anim_frames.append(self._samples(session))
